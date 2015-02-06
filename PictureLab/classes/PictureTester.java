@@ -17,6 +17,58 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void textCopyWithEnd()
+  {
+      Picture beach = new Picture("beach.jpg");
+      Picture temple = new Picture("temple.jpg");
+      beach.explore();
+      beach.copy(temple,40,400,40,400);
+      temple.copy(beach,40,400,40,400);
+      temple.explore();
+  }
+  
+  public static void testSepia()
+  {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.greyscale();
+      beach.explore();
+      beach.sepia();
+      beach.explore();
+  }
+  
+  public static void testPosterize()
+  {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.posterize();
+      beach.explore();
+  }
+  
+  public static void testNegate()
+  {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.negate();
+      beach.explore();
+  }
+  
+  public static void testGreyscale()
+  {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.greyscale();
+      beach.explore();
+  }
+  
+  public static void fixUnderwaterTester()
+  {
+      Picture water = new Picture("water.jpg");
+      water.explore();
+      water.fixUnderwater();
+      water.explore();
+  }
+  
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
@@ -24,6 +76,30 @@ public class PictureTester
     caterpillar.explore();
     caterpillar.mirrorVertical();
     caterpillar.explore();
+  }
+  
+  public static void testMirrorDiagonal()
+  {
+      Picture gorge = new Picture("beach.jpg");
+      gorge.explore();
+      gorge.mirrorDiagonal();
+      gorge.explore();
+  }
+  
+  public static void testMirrorVerticalRightToLeft()
+  {
+      Picture caterpillar = new Picture("caterpillar.jpg");
+      caterpillar.explore();
+      caterpillar.mirrorVerticalRightToLeft();
+      caterpillar.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+      Picture temple = new Picture("gorge.jpg");
+      temple.explore();
+      temple.mirrorHorizontal();
+      temple.explore();
   }
   
   /** Method to test mirrorTemple */
