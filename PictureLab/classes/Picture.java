@@ -427,11 +427,18 @@ public class Picture extends SimplePicture
   
   public void createMyCollage()
   {
-      Picture frog1 = new Picture("froggy.jpg");
-      Picture frog2 = new Picture("froggy.jpg");
-      Picture frog3 = new Picture("froggy.jpg");
-      Picture frog4 = new Picture("froggy.jpg");
-      
+      Picture frog1 = new Picture("frogreal.jpg");
+      Picture frog2 = new Picture("frogreal.jpg");
+      Picture frog3 = new Picture("frogreal.jpg");
+      Picture frog4 = new Picture("frogreal.jpg");
+      frog1.greyscale();
+      frog1.sepia();
+      frog2.posterize();
+      frog3.mirrorHorizontal();
+      this.copy(frog4,0,0);
+      this.copy(frog3,600,0);
+      this.copy(frog2,0,600);
+      this.copy(frog1,600,600);
   }
   
   /** Method to show large changes in color 
